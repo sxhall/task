@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS显示时间</title>
+	<meta charset="utf-8" />
+	<style>
+		#box{
+			width: 300px;
+			margin: 50px auto;
+			color: #333;
+		}
+	</style>
+</head>
+<body onload="startTime()">
+	<div id="box">
+	</div>
+</body>
+<script>
+	function startTime(){
+		var today = new Date();
+		var year = today.getFullYear();	//年
+		var month = today.getMonth()+1;	//月
+		var day = today.getDate();		//日
+
+		var d = today.getDay();
+		var week = ["周日","周一","周二","周三","周四","周五","周六"]; //获取周几
+
+		var hour = today.getHours();		//时
+		var minute = today.getMinutes();	//分
+		var second = today.getSeconds();	//秒
+
+		minute = checkTime(minute); //如果值小于10，前面加一个0
+		second = checkTime(second);
+
+		var box = document.getElementById("box");
+		box.innerHTML = year+"年"+month+"月"+day+"日 "+week[d]+" "+hour+":"+minute+":"+second;
+
+		t = setTimeout(function(){
+			startTime();
+		},1000);	//更新时间，是设置为500还是1000？我这个有疑问？
+		
+	}
+
+	function checkTime(i){
+		if(i<10){
+			i = "0" + i;
+		}
+		return i;
+	}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

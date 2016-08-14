@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.content{
+	width: 600px;
+	border: 1px solid #ccc;
+	margin: 30px auto;
+	padding: 10px;
+}
+
+.content form h3{
+	width: 300px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.form-field{
+	width: 580px;
+	height: 24px;
+	clear: both;
+}
+
+.field-name{
+	width: 70px;
+	height: 18px;
+	margin-top: 3px;
+	padding-right: 10px;
+	text-align: right;
+	line-height: 18px;
+	float: left;
+}
+
+.field-val{
+	width: 200px;
+	height: 18px;
+	margin-top: 2px;
+	float: left;
+}
+
+.sex-val{
+	width: 204px;
+	height: 22px;
+	margin-top: 2px;
+	float: left;
+}
+.err-msg{
+	width: 280px;
+	height: 18px;
+	margin-top: 3px;
+	padding-left: 5px;
+	line-height: 18px;
+	color: red;
+	float: left;
+}
+
+.btn-field{
+	width: 200px;
+	height: 24px;
+	padding-top: 10px;
+	margin-left: 120px;
+	clear: both;
+}
+
+.btn-left{
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+.btn-right{
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

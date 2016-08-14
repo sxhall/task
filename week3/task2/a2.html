@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>课程表</title>
+    <link rel="stylesheet" type="text/css" href="a2.css" />
+</head>
+<body>
+    <table>
+        <caption>XX学年XX学期 课程表</caption>
+        <tr class="row1">
+            <th class="th1"></th>
+            <th>星期一</th>
+            <th>星期二</th>
+            <th>星期三</th>
+            <th>星期四</th>
+            <th>星期五</th>    
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+            <td>政治</td>
+            <td>英语</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+            <td>政治</td>
+            <td>英语</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+            <td>政治</td>
+            <td>英语</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+            <td>政治</td>
+            <td>英语</td>
+        </tr>
+
+        <tr class="row1"><td colspan="7">午休</td></tr>
+        
+        <tr>
+            <td>5</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+            <td>政治</td>
+            <td>英语</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+            <td>政治</td>
+            <td>英语</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+            <td>政治</td>
+            <td>英语</td>
+        </tr>
+    </table>
+</body>
+<script>
+    var tr = document.getElementsByTagName("tr");
+    for(var i = 0; i< tr.length; i++){
+        if(i % 2 == 0){
+            tr[i].style.background = "#00ccff";
+        }
+    }
+   for(var i in tr){
+        var trb;
+        tr[i].onmouseover = function(){
+            trb =  this.getAttribute("style");
+            this.style.background = "#ccc";
+        }
+        tr[i].onmouseout = function(){
+            this.style = trb;
+        }
+
+   }
+</script>
+</html>
+
+
+
+
+
+

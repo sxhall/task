@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>哈哈哈</title>
+	<link rel="stylesheet" type="text/css" href="./a1.css" />
+</head>
+<body>
+	<div id="box">
+		<input type="button" value="哈哈" />
+		<input type="button" value="哈哈" />
+		<input type="button" value="哈哈" />
+		<input type="button" value="哈哈" />
+		<input type="button" value="哈哈" />
+		<input type="button" value="哈哈" />
+	</div>
+</body>
+<script>
+	var btn = document.getElementsByTagName("input");
+	for(var i in btn){
+		btn[i].onclick = function(){
+			for(var i in btn){
+				btn[i].value = "哈哈";
+			}
+			this.value = "呜呜";
+		}
+	}
+</script>
+</html>

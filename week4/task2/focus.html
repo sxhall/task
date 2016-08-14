@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>js获取焦点</title>
+</head>
+<body>
+	<input type="text" id="input" value="请输入密码" />
+</body>
+<script>
+	function run(){
+		var input = document.getElementById("input");
+
+		// onfocus属性在元素获取焦点时触发
+		input.onfocus = function(){
+			if(this.value == "请输入密码"){
+				this.value = "";
+				this.type = "password";
+			}
+		}
+
+		// onblur属性在元素失去焦点时触发
+		input.onblur = function(){
+			//如果没输入内容就显示下面的内容，如果有输入内容则保留内容；
+			if(!this.value){
+				this.type = "text";
+				this.value = "请输入密码";
+			}
+		}
+	}
+
+	run();
+</script>
+</html>

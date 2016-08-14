@@ -1,0 +1,41 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#box{
+	width: 300px;
+	height: 90px;
+	padding: 5px;
+	border: 1px solid red;
+	border-radius: 5px;
+	text-align: left;
+	margin: 20px auto;
+
+}
+#box input{
+	width: 120px;
+	height: 30px;
+	font-size: 15px;
+	border: 1px solid #ccc;
+}
+#box button{
+	width: 40px;
+	height: 32px;
+	/*line-height: 30px;  32px包括了上下边框的1px在里面 */
+	border: 1px solid #ccc;
+	margin-left: -5px;
+	background: #fff;
+	font-size: 15px;
+}
+#result{
+	width: 300px;
+	padding: 5px;
+	border: 1px solid red;
+	border-radius: 5px;
+	text-align: left;
+	margin: 0px auto;
+
+}
+h3{
+	margin: 10px auto;
+}

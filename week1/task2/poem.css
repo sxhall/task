@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(./poem.gif);
+}
+#container{
+	width: 500px;
+	height: 400px;
+	margin: 50px auto;
+	border: 0px solid #ccc;
+}
+#content{
+	text-align: center;
+	margin-top: 30px;
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+#title{
+	/*letter-spacing: 0;*/
+	/*font-weight: bold;*/
+	font-size: 25px;
+}
+#poet{
+	letter-spacing: 0;
+	margin-bottom: 5px;
+}
+p{
+	padding: 5px;
+}
+#note{
+	margin-top: 50px;
+	padding-left: 50px;
+}

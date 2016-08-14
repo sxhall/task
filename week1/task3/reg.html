@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>表单设计</title>
+	<link rel="stylesheet" type="text/css" href="./reg.css" />
+</head>
+<body>
+	<div id="container">
+		<form action="./form.php" method="post">
+		<div class="title">
+			<h3>注册账号</h3>
+		</div>
+
+		<div class="item item1">
+			邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：<input name="email" type="email" placeholder="请输入注册邮箱" autofocus="true" required />
+		</div>
+		<div class="item item1">
+			密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：<input name="password" type="text" placeholder="请输入密码" required />
+		</div>
+		<div class="item item1">
+			确认密码：<input name="password" type="text" placeholder="请再次输入密码" required />
+		</div>
+
+		<div class="item">
+			性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：<input name="sex" type="radio" value="man" checked />男
+			<input name="sex" type="radio" value="woman" />女
+		</div>
+		<div class="item">
+			生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日：
+			<select name="select1">
+                <option value="0" selected>公历</option> 
+                <option value="1">农历</option> 
+            </select>
+			<select name="year">
+				<option value="0" selected>2016年</option>
+				<option value="1">2015年</option>
+			</select>
+			<select name="month">
+				<option value="0" selected>1月</option>
+				<option value="1">2月</option>
+			</select>
+			<select name="day">
+				<option value="0" selected>1日</option>
+				<option value="1">2日</option>
+			</select>
+		</div>
+		<div class="item">
+			所&nbsp;在&nbsp;&nbsp;地：
+			<select name="province">
+				<option value="0" selected>广东</option>
+				<option value="1">江西</option>
+			</select>
+			<select name="city">
+				<option value="0" selected>广州</option>
+				<option value="1">深圳</option>
+			</select>
+			<select name="district">
+				<option value="0" selected>海珠区</option>
+				<option value="1">番禺区</option>
+			</select>
+		</div>
+		
+		<div class="item">
+			个人爱好：
+			<input type="checkbox" value="1" />读书
+			<input type="checkbox" value="2">旅游
+			<input type="checkbox" value="3">足球
+			<input type="checkbox" value="4">篮球
+			<input type="checkbox" value="5">乒乓球
+		</div>
+		<div class="item">
+		<label>个人说明：</label>
+			<textarea name="sm" cols="30" rows="6"></textarea>
+		</div>
+		<div class="item item3">
+			<input type="submit" name="submit" value="注册" />
+			<input type="reset" name="reset" value="重置" />
+		</div>
+	</form>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

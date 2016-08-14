@@ -1,0 +1,12 @@
+cmd + 2 文件2
+cmd + d 选择相同内容（一行接一行）
+cmd + ctrl + g 选择相同内容
+cmd + l 按行选择
+cmd + shift + j 选择全部子元素
+cmd + r 跳转到函数
+cmd + shift + d 复制当前行
+cmd + ctrl + ↑ 上下移动行
+cmd + k + b 显示、隐藏侧边栏
+按住CMD键，在需要放光标的位置点击鼠标左键 多个光标
+cmd + ctrl + p 获取已保存的项目
+cmd + p 搜索打开的文件

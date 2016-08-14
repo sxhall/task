@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    width: 50%;
+    height: 400px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+caption{
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 15px;
+}
+th,td{
+    border: 1px solid #000;
+}
+.row1{
+    height: 30px;
+}
+.th1{
+    width: 30px;
+    height: 30px;
+}

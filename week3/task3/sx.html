@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>十二生肖</title>
+	<link rel="stylesheet" type="text/css" href="./sx.css" />
+	<script src="./sx.js"></script>
+</head>
+<body>
+	<div id="container">
+		<input id="birth" type="text" name="birth" value="" placeholder="请输入你的出生年份" checked/>
+		<input id="btn" type="button" value="查询生肖" />
+		<div id="box">
+			<!-- <img id="img" src="" width=300px" /> -->
+			<img id="img" src="" class=""/>
+	</div>
+	<p id="p1">输入年份，查查自己的生肖吧~</p>
+	</div>
+</body>
+<script>
+	var birth = document.getElementsByName("birth");
+	var btn = document.getElementById("btn");
+	var img = document.getElementById("img");
+	var p1 = document.getElementById("p1");
+	var x = 1984, y, z; //1984为鼠年，鼠-12、牛、虎、兔、龙、蛇、马、羊、猴、鸡、狗、猪  鼠0、牛、虎、兔、龙、蛇、马、羊、猴、鸡、狗、猪11
+	btn.onclick = function(){
+		img.setAttribute("class","img"); //为什么img.class = "img"; 不行？？而下面的 img.src = "./shu.jpg"; 可以？？为什么？
+		y = birth[0].value;
+		z = (y - x) % 12;
+		if(z == 0){
+			img.src = "./img/shu.jpg";
+			p1.innerHTML = "鼠";
+		}else if(z == 1 || z == -11){
+			img.src = "./img/niu.jpg";
+			p1.innerHTML = "牛";
+		}else if(z == 2 || z == -10){
+			img.src = "./img/hu.jpg";
+			p1.innerHTML = "虎";
+		}else if(z == 3 || z == -9){
+			img.src = "./img/tu.jpg";
+			p1.innerHTML = "兔";
+		}else if(z == 4 || z == -8){
+			img.src = "./img/long.jpg";
+			p1.innerHTML = "龙";
+		}else if(z == 5 || z == -7){
+			img.src = "./img/she.jpg";
+			p1.innerHTML = "蛇";
+		}else if(z == 6 || z == -6){
+			img.src = "./img/ma.jpg";
+			p1.innerHTML = "马";
+		}else if(z == 7 || z == -5){
+			img.src = "./img/yang.jpg";
+			p1.innerHTML = "羊";
+		}else if(z == 8 || z == -4){
+			img.src = "./img/hou.jpg";
+			p1.innerHTML = "猴";
+		}else if(z == 9 || z == -3){
+			img.src = "./img/ji.jpg";
+			p1.innerHTML = "鸡";
+		}else if(z == 10 || z == -2){
+			img.src = "./img/gou.jpg";
+			p1.innerHTML = "狗";
+		}else if(z == 11 || z == -1){
+			img.src = "./img/zhu.jpg";
+			p1.innerHTML = "猪";
+		}
+	}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

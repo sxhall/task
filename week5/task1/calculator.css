@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.input-box{
+    width: 320px;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+.input-box h3{
+    width: 100%;
+    text-align: center;
+}
+
+.input-box input, select, button{
+    margin-top: 10px;
+}
+
+.input-box input{
+    width: 100px;
+}
+
+.input-box select, button{
+    width: 50px;
+}
+
+.result{
+    width: 318px;
+    height: 100px;
+    border: 1px solid #ccc;
+    margin: 10px auto 0;
+    text-align: left;
+}

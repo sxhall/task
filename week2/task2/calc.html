@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简易计算器</title>
+	<link rel="stylesheet" type="text/css" href="calc.css" />
+</head>
+<body>
+	<h2>简易计算器</h2>
+	<div id="box">
+		<input type="text" class="arg" id="arg1" />
+		<input type="text" class="arg" id="arg2" />
+		<div class="btn" onclick="operator('plus')">求和</div>
+		<div class="btn" onclick="operator('minus')">相减</div>
+		<div class="btn" onclick="operator('multiply')">相乘</div>
+		<div class="btn1" onclick="operator('divide')">除以</div>
+		<input type="text" class="res" id="res" />
+	</div>
+</body>
+<script>
+	var arg1 = document.getElementById("arg1");
+	var arg2 = document.getElementById("arg2");
+	var res = document.getElementById("res");
+	function operator(obj){
+		var x = arg1.value;
+		var y = arg2.value;
+		x = eval(x);
+		y = eval(y);
+		var z;
+		switch(obj){
+			case "plus":
+				z = x + y;
+				break;
+			case "minus":
+				z = x - y;
+				break;
+			case "multiply":
+				z = x * y;
+				break;
+			case "divide":
+				z = x / y;
+				if(parseInt(z)!=z){
+					z = z.toFixed(2); //如果结果不是整数，则最后结果只保留两位小数
+				}
+				break;		
+		}
+		res.value = z;
+	}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
